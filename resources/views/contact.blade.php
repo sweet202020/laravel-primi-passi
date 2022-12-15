@@ -22,9 +22,16 @@
         </nav>
     </header>
     <main>
-        <ul>
+        <h2 class="text-uppercase m-5">{{$senior}}</h2>
+        <ul class=" m-3">
             @foreach($senNumbers as $senNumber)
-            <li>{{$senNumber}}</li>
+            <li><a href="">{{$senNumber}}</a></li>
+            @endforeach
+        </ul>
+        <h2 class="text-uppercase m-5">{{$junior}}</h2>
+        <ul class="m-3">
+            @foreach($junNumbers as $junNumber)
+            <li><a href="">{{$junNumber}}</a></li>
             @endforeach
         </ul>
 
